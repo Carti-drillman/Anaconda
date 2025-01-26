@@ -5,7 +5,11 @@ This Anaconda version will be the latest version for Anaconda language. The synt
 # New Syntaxes
 
 `from `: It will install the module or a file like `math_tools.ana`.
-`def `: Define syntaxes or functions
+
+`def `: Define syntaxes or functions.
+
 `elif`: Almost the same as if.
+
 `range`: To make 10 texts or less or maybe more.
-`var`: Variable define
+
+`var`: Variable define.
