@@ -1,15 +1,58 @@
-# Anaconda 1.2
+# Anaconda 1.3
 
-This Anaconda version will be the latest version for Anaconda language. The syntaxes updated like new syntaxes are added to the langauge.
+Anaconda 1.3 have some new features. Now it has System syntaxes or OS devlopment syntaxes.
 
-# New Syntaxes
+# File Operations
 
-`from `: It will install the module or a file like `math_tools.ana`.
+`create_file "source"` : Creates an empty file.
 
-`def `: Define syntaxes or functions.
+`write_file "source"` : Writes text to a file.
 
-`elif`: Almost the same as if.
+`read_file "source"` : Reads and prints file contents
 
-`range`: To make 10 texts or less or maybe more.
+`delete_file "source"` : Deletes a file
 
-`var`: Variable define.
+# Process Management
+
+`start_process "command"` : Starts a system process.
+
+`stop_process "command"` : Stops a process by name.
+
+`list_processs` : Lists all running processes.
+
+# Memory Management
+
+`allocate_memory` : Allocates memory.
+
+`free_memory` : Frees memory.
+
+# Networking
+
+`open_port port_number` : Opens a port.
+
+`send_data "data" "host port` : Sends data to a host via a port.
+
+`receive_data` : Receives data from a port.
+
+`close_port` : Closes the network socket.
+
+# Example code
+
+`example.ana`
+
+```python
+print "Starting system initialization..."
+create_file "log.txt"
+write_file "log.txt" "System initialized."
+
+start_process "shell"
+list_processes
+get_os_info
+
+if get_cpu_info > 2:
+    print "Sufficient CPU cores available."
+
+stop_process "shell"
+delete_file "log.txt"
+print "System shutdown completed."
+```
